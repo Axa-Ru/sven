@@ -1,0 +1,661 @@
+# Russian translation for sven.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# more@irpin.com, 2004.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-02-13 22:49+0300\n"
+"PO-Revision-Date: 2007-02-13 12:56+0300\n"
+"Last-Translator: Egor Vyscrebentsov <evyscr@altlinux.ru>\n"
+"Language-Team: ru@li.org\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. add pages
+#: libsven/pref/about.c:90 libsven/pref/about.c:106
+#: libsven/pref/prefswin.c:317
+msgid "Info"
+msgstr "Информация"
+
+#: libsven/pref/about.c:107
+msgid "Authors"
+msgstr "Авторы"
+
+#: libsven/pref/about.c:108
+msgid "Thanks To"
+msgstr "Благодарность"
+
+#: libsven/pref/about.c:109
+msgid "Translators"
+msgstr "Переводчики"
+
+#: libsven/pref/configxosd.c:328 libsven/pref/prefswin.c:299
+#: libsven/pref/prefswin.c:390
+msgid "XOSD"
+msgstr ""
+
+#. Font selector.
+#: libsven/pref/configxosd.c:336
+msgid "Font:"
+msgstr "Шрифт:"
+
+#. Colour Selector
+#: libsven/pref/configxosd.c:350
+msgid "Colour:"
+msgstr "Цвет:"
+
+#. Timeout
+#: libsven/pref/configxosd.c:362
+msgid "Timeout:"
+msgstr "Таймаут:"
+
+#: libsven/pref/configxosd.c:375
+msgid "seconds"
+msgstr "секунды"
+
+#. Position
+#: libsven/pref/configxosd.c:381
+msgid "Position:"
+msgstr "Позиция:"
+
+#. Vertical Offset
+#: libsven/pref/configxosd.c:444
+msgid "Vertical Offset:"
+msgstr "Отступ по вертикали:"
+
+#: libsven/pref/configxosd.c:456 libsven/pref/configxosd.c:473
+msgid "pixels"
+msgstr "пикселей"
+
+#. Horizontal Offset
+#: libsven/pref/configxosd.c:462
+msgid "Horizontal Offset:"
+msgstr "Отступ по горизонтали:"
+
+#. Background color
+#: libsven/pref/configxosd.c:479
+msgid "Background Color:"
+msgstr ""
+
+#: libsven/pref/configxosd.c:487
+msgid "Enable"
+msgstr "Включить"
+
+#: libsven/pref/configxosd.c:502
+msgid "Enable XOSD"
+msgstr "Включить XOSD"
+
+#: libsven/pref/configxosd.c:507
+#, fuzzy
+msgid "Enable Frame"
+msgstr "Включить фрейм"
+
+#: libsven/pref/configxosd.c:512
+#, fuzzy
+msgid "Enable Shadow"
+msgstr "Включить тень"
+
+#: libsven/pref/configxosd.c:522
+msgid "Test OSD"
+msgstr "Tестировать OSD"
+
+#: libsven/pref/configplugin.c:80 libsven/pref/configplugin.c:127
+#: libsven/pref/configplugin.c:258 libsven/plugin.c:201
+msgid "Not information"
+msgstr "Нет информации"
+
+#: libsven/pref/configplugin.c:222 libsven/pref/prefswin.c:308
+#: libsven/pref/prefswin.c:391
+msgid "Plugins"
+msgstr "Плагины"
+
+#: libsven/pref/configplugin.c:247
+msgid "Description"
+msgstr "Описание"
+
+#: libsven/pref/configplugin.c:275
+msgid "Configure"
+msgstr "Конфигурация"
+
+#: libsven/pref/configplugin.c:279 libsven/pref/prefswin.c:392
+msgid "About"
+msgstr "О программе"
+
+#: libsven/pref/configplugin.c:285
+msgid "Status"
+msgstr "Статус"
+
+#: libsven/pref/configplugin.c:292
+msgid "Name"
+msgstr "Имя"
+
+#: libsven/pref/configplugin.c:298
+msgid "Module"
+msgstr "Модуль"
+
+#: libsven/trayicon.c:100
+msgid "Sven Multimedia Keyboard daemon"
+msgstr "Sven - демон мультимедийных клавиатур"
+
+#: libsven/key.c:99 libsven/key.c:199
+#, c-format
+msgid ""
+"It seems that another application already has access to the multimedia "
+"keys.\n"
+"Key %s couldn't be bound.\n"
+"Is another daemon already running ?\n"
+msgstr ""
+"Похоже, что другое приложение уже имеет доступ к мультимедийным клавишам.\n"
+"Клавиша %s не может быть назначена.\n"
+"Запущен ли другой демон ?\n"
+
+#: libsven/key.c:224
+#, c-format
+msgid ""
+"Sorry file key configuration not found.\n"
+"Please greate new configuration keyboard.\n"
+msgstr ""
+"Извините, но файл конфигурации клавиш не найден.\n"
+"Пожалуйста, создайте новую настройку для клавиатуры.\n"
+
+#: libsven/mouse.c:90
+#, c-format
+msgid ""
+"There was an error removing access to the mouse buttons.\n"
+" Buttons %d couldn't be unbound."
+msgstr ""
+"Произошла ошибка при отключении доступа к кнопкам мыши.\n"
+" Клавиша %d не будет отключена."
+
+#: libsven/mouse.c:144
+#, c-format
+msgid ""
+"It seems that another application already has access to the you mouse.\n"
+"Buttons combination %s couldn't be bound.\n"
+"Is another daemon already running ?\n"
+msgstr ""
+"Похоже, что другое приложение уже имеет доступ к клавишам мыши.\n"
+"Комбинация клавиш %s не будет назначена.\n"
+"Запущен ли другой демон ?\n"
+
+#: libsven/mouse.c:166
+#, c-format
+msgid ""
+"Sorry file mouse configuration not found.\n"
+"Please greate new mouse configuration.\n"
+msgstr ""
+"Извините, но файл конфигурации кнопок мыши не найден.\n"
+"Пожалуйста, создайте новую конфигурацию для кнопок мыши.\n"
+
+#: plugins/cdrom/cdpl.c:60
+#, c-format
+msgid "can't prev track the cd/dvd drive"
+msgstr "не могу перейти на предыдущий трэк cd/dvd диска"
+
+#: plugins/cdrom/cdpl.c:90
+#, c-format
+msgid "can't next track the cd/dvd drive"
+msgstr "не могу перейти на следующий трэк cd/dvd диска"
+
+#: plugins/cdrom/cdpl.c:107 plugins/cdrom/cdpl.c:169
+#, c-format
+msgid "Try pausing a CD before you try this option."
+msgstr "Попробуйте приостановить CD перед использованием этой опции."
+
+#: plugins/cdrom/cdpl.c:109 plugins/cdrom/cdpl.c:171
+#, c-format
+msgid "can't resume playing cd/dvd drive"
+msgstr "не могу продолжить проигрование cd/dvd диска"
+
+#: plugins/cdrom/cdpl.c:123 plugins/cdrom/cdpl.c:186
+#, c-format
+msgid "can't pause cd/dvd drive"
+msgstr "не могу приостановить cd/dvd диск"
+
+#: plugins/cdrom/cdpl.c:153
+#, c-format
+msgid "can't playing the cd/dvd drive"
+msgstr "не могу проигрывать cd/dvd диск"
+
+#: plugins/cdrom/cdpl.c:207 plugins/cdrom/cdpl.c:230
+#, c-format
+msgid ""
+"No disc in drive\n"
+" "
+msgstr ""
+"Нет диска в приводе\n"
+" "
+
+#: plugins/cdrom/cdpl.c:265
+#, c-format
+msgid ""
+"can't open cd/dvd drive\n"
+" "
+msgstr ""
+"не могу открыть cd/dvd диск\n"
+" "
+
+#: plugins/cdrom/cdpl.c:293
+msgid "CD Play"
+msgstr "CD Воспроизведение"
+
+#: plugins/cdrom/cdpl.c:305 plugins/cdrom/cdpl.c:344
+msgid "CD Pause "
+msgstr "CD Пауза "
+
+#: plugins/cdrom/cdpl.c:317
+msgid "CD Resume play"
+msgstr "CD Продолжить воспроизведение"
+
+#: plugins/cdrom/cdpl.c:358
+msgid "CD Next "
+msgstr "CD Следующий"
+
+#: plugins/cdrom/cdpl.c:372
+msgid "CD Prev "
+msgstr "CD Предыдущий"
+
+#: plugins/cdrom/cdpl.c:385
+msgid "CD Stop"
+msgstr "CD Стоп"
+
+#: plugins/cdrom/cdpl.c:404
+msgid "Open Cd-Rom"
+msgstr "Открыть Cd-Rom"
+
+#: plugins/cdrom/cdpl.c:415
+msgid "Close Cd-Rom"
+msgstr "Закрыть Cd-Rom"
+
+#. greate list key config
+#. add pages
+#: libsven/pref/prefswin.c:110 libsven/pref/prefswin.c:280
+#: libsven/pref/prefswin.c:388
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#. greate list mouse config
+#: libsven/pref/prefswin.c:135 libsven/pref/prefswin.c:289
+#: libsven/pref/prefswin.c:389
+msgid "Mouse"
+msgstr "Мышь"
+
+#: libsven/pref/prefswin.c:260
+msgid "Category"
+msgstr "Категории"
+
+#: libsven/pref/prefswin.c:345
+msgid "Sven "
+msgstr "Sven "
+
+#: libsven/pref/prefswin.c:345
+msgid " Preference windows"
+msgstr " Настройки окон"
+
+#: libsven/utils.c:294
+#, c-format
+msgid ""
+"Couldn't execute command: \"<span weight=\"bold\" color=\"red\">%s</span>\"\n"
+"Verify that this command exists.\n"
+msgstr ""
+"Не могу запустить команду: \"<span weight=\"bold\" color=\"red\">%s</span>"
+"\"\n"
+"Проверьте, что файл существует.\n"
+
+#~ msgid "Volume"
+#~ msgstr "Громкость"
+
+#~ msgid "Daemon already running, exiting...\n"
+#~ msgstr "Программа уже запущена, выхожу...\n"
+
+#~ msgid "Daemon already running, exiting..."
+#~ msgstr "Программа уже запущена, выхожу..."
+
+#~ msgid "Do you want to remove it from the hystory?"
+#~ msgstr "Хотите удалить это из истории?"
+
+#~ msgid "Other preference"
+#~ msgstr "Другие настройки"
+
+#~ msgid "<b><span color=\"#0046D5\">CD-Rom</span></b>"
+#~ msgstr "<b><span color=\"#0046D5\">CD-Rom</span></b>"
+
+#~ msgid "<b><span color=\"#0046D5\">Mixer</span></b>"
+#~ msgstr "<b><span color=\"#0046D5\">Микшер</span></b>"
+
+#~ msgid "All"
+#~ msgstr "Все"
+
+#~ msgid "User"
+#~ msgstr "Текущего пользователя"
+
+#~ msgid "<b><span color=\"#0046D5\">View process</span></b>"
+#~ msgstr "<b><span color=\"#0046D5\">Просмотр процессов</span></b>"
+
+#~ msgid "Tray icon"
+#~ msgstr "Иконка в трее"
+
+#~ msgid "Desktop icon"
+#~ msgstr "Иконка на рабочем столе"
+
+#~ msgid "<b><span color=\"#0046D5\">View icon</span></b>"
+#~ msgstr "<b><span color=\"#0046D5\">Отображение иконки</span></b>"
+
+#~ msgid "<b><span color=\"#0046D5\">Run startup program</span></b>"
+#~ msgstr ""
+#~ "<b><span color=\"#0046D5\">Запускать программу при старте</span></b>"
+
+#~ msgid "<b><span color=\"#0046D5\">View XOSD</span></b>"
+#~ msgstr "<b><span color=\"#0046D5\">Просмотр XOSD</span></b>"
+
+#~ msgid "<b><span color=\"#0046D5\">Start Plugins</span></b>"
+#~ msgstr "<b><span color=\"#0046D5\">Запуск Плагинов</span></b>"
+
+#~ msgid "Number"
+#~ msgstr "Номер"
+
+#~ msgid "XOSD configure"
+#~ msgstr "Настройка XOSD"
+
+#~ msgid "Shadow Offset:"
+#~ msgstr "Ширина тени:"
+
+#~ msgid "Outline Offset:"
+#~ msgstr "Ширина контура:"
+
+#~ msgid ""
+#~ "There was an error removing access to the multimedia keys.\n"
+#~ "Key %d couldn't be unbound."
+#~ msgstr ""
+#~ "Произошла ошибка при отключении доступа к мультимедийным клавишам.\n"
+#~ "Клавиша %d не может быть отключена."
+
+#~ msgid "Bad %s modul"
+#~ msgstr "Некорректный %s модуль"
+
+#~ msgid "Unmute:%d"
+#~ msgstr "Звук включён:%d"
+
+#~ msgid "Plugin: \"%s\" loaded!\n"
+#~ msgstr "Плагин: \"%s\" загружен!\n"
+
+#~ msgid "Plugin: \"%s\" was not loaded, moving on!\n"
+#~ msgstr "Плагин: \"%s\" не был загружен, переходим!\n"
+
+#~ msgid "Key configure"
+#~ msgstr "Настройка клавиш"
+
+#~ msgid "Mouse configure"
+#~ msgstr "Настройка мыши"
+
+#~ msgid "AutoCorrect Option"
+#~ msgstr "Опции автокоррекции"
+
+#~ msgid "Switching Option"
+#~ msgstr "Опции переключения"
+
+#~ msgid ""
+#~ "<b><span color=\"red\">Sorry this function realised by next  version</"
+#~ "span></b>"
+#~ msgstr ""
+#~ "<b><span color=\"red\">Извините, эта функция будет реализована в "
+#~ "следующей версии</span></b>"
+
+#~ msgid "<b>Select default language</b>"
+#~ msgstr "<b>Язык по умолчанию</b>"
+
+#~ msgid "Display popup language indicator on layout change"
+#~ msgstr "Показывать всплывающий индикатор языка при переключении"
+
+#~ msgid "XKB Option"
+#~ msgstr "Опции XKB"
+
+#~ msgid "Sven multimedia keyboard"
+#~ msgstr "Sven для мультимедийной клавиатуры"
+
+#~ msgid "Copyright 2004-2005 by Eugene Morenko(More)"
+#~ msgstr "Авторские права 2004-2005 Евгений Моренко(More)"
+
+#~ msgid "Configure key"
+#~ msgstr "Конфигурация клавиши"
+
+#~ msgid "Configure mouse"
+#~ msgstr "Конфигурация мыши"
+
+#~ msgid "Option XKB"
+#~ msgstr "Опции XKB"
+
+#~ msgid "Option AutoCorrect"
+#~ msgstr "Опция Автокоррекции"
+
+#~ msgid "Option Switching"
+#~ msgstr "Опции Переключения"
+
+#~ msgid "Preference"
+#~ msgstr "Настройки"
+
+#~ msgid "Configure XOSD"
+#~ msgstr "Настройки XOSD"
+
+#~ msgid "new_pixmap, requested unknown type %d\n"
+#~ msgstr "new_pixmap, запросил неизвестный тип %d\n"
+
+#~ msgid "Do you want to kill this procces?"
+#~ msgstr "Хотите ли вы убить процесс?"
+
+#~ msgid "Procces"
+#~ msgstr "Процессы"
+
+#~ msgid "CD Player"
+#~ msgstr "CD Проигрыватель"
+
+#~ msgid "CD Prev"
+#~ msgstr "CD Предыдущий"
+
+#~ msgid "CD Pause"
+#~ msgstr "CD Пауза"
+
+#~ msgid "CD Next"
+#~ msgstr "CD Следующий"
+
+#~ msgid "CD Eject"
+#~ msgstr "CD Извлечь"
+
+#~ msgid "Volume Up"
+#~ msgstr "Увеличить Громкость"
+
+#~ msgid "Volume Down"
+#~ msgstr "Уменьшить Громкость"
+
+#~ msgid "Mute"
+#~ msgstr "Выключить"
+
+#~ msgid "Clipboard Manager"
+#~ msgstr "Менеджер буфера обмена"
+
+#~ msgid "Layout XKB"
+#~ msgstr "Раскладка XKB"
+
+#~ msgid "Sven Multimedia Keys daemon active"
+#~ msgstr "Sven - демон мультимедийных клавиш, активен"
+
+#~ msgid "Start add_print_list\n"
+#~ msgstr "Запустить add_print_list\n"
+
+#~ msgid "Command"
+#~ msgstr "Команда"
+
+#~ msgid "Text Display"
+#~ msgstr "Отображаемый Текст"
+
+#~ msgid " Configuration button mouse"
+#~ msgstr " Конфигурация клавиш мыши"
+
+#~ msgid ""
+#~ "<span size=\"large\" color=\"#1347ce\"><b>Press any buttons combination  "
+#~ "for mouse</b></span>"
+#~ msgstr ""
+#~ "<span size=\"large\" color=\"#1347ce\"><b>Нажмите комбинацию кнопок мыши</"
+#~ "b></span>"
+
+#~ msgid "Press any key"
+#~ msgstr "Нажмите любую клавишу"
+
+#~ msgid "Configure Mouse"
+#~ msgstr "Настройка Мыши"
+
+#~ msgid "Key code"
+#~ msgstr "Код клавиши"
+
+#~ msgid "Button mouse code"
+#~ msgstr "Код кнопки мыши"
+
+#~ msgid "Default setting:"
+#~ msgstr "Настройки по умолчанию:"
+
+#~ msgid "Program:"
+#~ msgstr "Программа:"
+
+#~ msgid "Special action:"
+#~ msgstr "Специальное действие:"
+
+#~ msgid "Runs"
+#~ msgstr "Запуск"
+
+#~ msgid " Configuration button: Edit"
+#~ msgstr " Конфигурирование клавиши: Редактировать"
+
+#~ msgid "Select any button"
+#~ msgstr "Выберите любую кнопку"
+
+#~ msgid "   Characters:"
+#~ msgstr "         Букв:"
+
+#~ msgid "Characters:"
+#~ msgstr "Букв:"
+
+#~ msgid "Words:"
+#~ msgstr "Слов:"
+
+#~ msgid "Edits:"
+#~ msgstr "Правка:"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "Time"
+#~ msgstr "Время"
+
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgid "<b>Undo/Forced switch</b>"
+#~ msgstr "<b>Отмена/Принудительное переключение</b>"
+
+#~ msgid ""
+#~ "<span color=\"red\">Use this key to undo the last automatic change or to "
+#~ "manually force layout change of the last entered word.</span>"
+#~ msgstr ""
+#~ "<span color=\"red\">Используйте эту клавишу для отмены последнего "
+#~ "автоматического переключения или ручной принудительной смены раскладки "
+#~ "последнего введённого слова.</span>"
+
+#~ msgid "<b>Selected text convert</b>"
+#~ msgstr "<b>Конвертирование выделенного текста</b>"
+
+#~ msgid ""
+#~ "<span color=\"red\">Use this key to manually force layout change of any "
+#~ "selected text.</span>"
+#~ msgstr ""
+#~ "<span color=\"red\">Используйте эту клавишу для ручной смены раскладки "
+#~ "любого выделенного текста.</span>"
+
+#~ msgid "AutoSwitch - switch keyboard language automatically"
+#~ msgstr ""
+#~ "Автопереключение - переключение языка ввода клавиатуры автоматически"
+
+#~ msgid "<b>Invert case</b>"
+#~ msgstr "<b>Инвертирование регистра</b>"
+
+#~ msgid ""
+#~ "<span color=\"red\">Pressing this key will invert the character case of "
+#~ "the last entered word or of any selected text</span>"
+#~ msgstr ""
+#~ "<span color=\"red\">Нажатие клавиши инвертирует регистр последнего "
+#~ "введённого слова или выделенного текста</span>"
+
+#~ msgid "<b>Select language</b>"
+#~ msgstr "<b>Выбор языка</b>"
+
+#~ msgid "enable autocorect for this language"
+#~ msgstr "включить автокорректирование для данного языка"
+
+#~ msgid "misspelled"
+#~ msgstr "ошибочные"
+
+#~ msgid "correct"
+#~ msgstr "корректные"
+
+#~ msgid "Modify"
+#~ msgstr "Изменить"
+
+#~ msgid "Misspelled"
+#~ msgstr "Ошибочные"
+
+#~ msgid "Correct"
+#~ msgstr "Корректные"
+
+#~ msgid "Configure time format"
+#~ msgstr "Настроить формат вывода времени"
+
+#~ msgid ""
+#~ "\t\t<b> <span size=\"large\" color=\"#032aa5\">Time output format</span></"
+#~ "b>\n"
+#~ "\t\t<span size=\"large\" style=\"italic\" color=\"#8732ef\"> Allowed "
+#~ "options :\\n </span>\n"
+#~ "<b>%a</b> - Abbr. Day of week abbr\n"
+#~ "<b>%A</b> - Day of week name\n"
+#~ "<b>%b</b> - Month name abbr\n"
+#~ "<b>%B</b> - Month nome\n"
+#~ "<b>%c</b> - Standart Str date and time\n"
+#~ "<b>%d</b> - day of month (01..31)\n"
+#~ "<b>%H</b> - hour (00..23)\n"
+#~ "<b>%I</b> - hour (01..12)\n"
+#~ "<b>%j</b> - day of year (001..366)\n"
+#~ "<b>%m</b> - month (01..12)\n"
+#~ "<b>%M</b> - minute (00..59)\n"
+#~ "<b>%p</b> - locale's upper case AM or PM indicator (blank in many "
+#~ "locales)\n"
+#~ "<b>%S</b> - second (00..60); the 60 is necessary to accommodate a leap "
+#~ "second\n"
+#~ "<b>%y</b> - last two digits of year (00..99) \n"
+#~ "<b>%Y</b> - year (1970...) \n"
+#~ "<b>%Z</b> - time zone (e.g., EDT), or nothing if no time zone is "
+#~ "determinable \n"
+#~ msgstr ""
+#~ "\t\t<b> <span size=\"large\" color=\"#032aa5\">Формат вывода времени</"
+#~ "span></b>\n"
+#~ "\t\t<span size=\"large\" style=\"italic\" color=\"#8732ef\"> Допустимые "
+#~ "параметры :\\n </span>\n"
+#~ "<b>%a</b> - День недели, сокр.\n"
+#~ "<b>%A</b> - День недели\n"
+#~ "<b>%b</b> - Название месяца, сокр.\n"
+#~ "<b>%B</b> - Название месяца\n"
+#~ "<b>%c</b> - Стандартные дата и время\n"
+#~ "<b>%d</b> - День месяца (01..31)\n"
+#~ "<b>%H</b> - час (00..23)\n"
+#~ "<b>%I</b> - час (01..12)\n"
+#~ "<b>%j</b> - день года (001..366)\n"
+#~ "<b>%m</b> - месяц (01..12)\n"
+#~ "<b>%M</b> - минута (00..59)\n"
+#~ "<b>%p</b> - AM или PM индикатор (пустой во многих локалях)\n"
+#~ "<b>%S</b> - секунды (00..60); 60 необходим для подготовки к скачкусекунд\n"
+#~ "<b>%y</b> - последние две цифры года (00..99) \n"
+#~ "<b>%Y</b> - год (1970...) \n"
+#~ "<b>%Z</b> - временная зона (т.е, EDT), или ничего если временная зона не "
+#~ "определима \n"

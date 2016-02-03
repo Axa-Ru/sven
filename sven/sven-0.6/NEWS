@@ -1,0 +1,55 @@
+Sven 0.6
+* Support emulations mouse button
+* New rewrite OSD library for GTK
+* Rewrite many part code for stable
+* Rewrite full function for module (autoconvert, mixer, cdrom) and other 
+
+Bugfixes
+* And other small problem
+
+Sven 0.5
+Bugfixes
+* And other small problem
+
+Sven 0.4.3.3
+Bugfixes
+* And other small problem
+
+Sven 0.4.3
+Bugfixes
+* And other small problem
+
+Sven 0.4.2
+* Support emulations keys
+
+Bugfixes
+* Fixed tray and Desktop icon
+* And other small problem
+
+
+Sven 0.4.1
+* Support mouse
+
+Bugfixes
+* Fixed segfault for old key_config
+* Fixed configurate key window (list add)
+* Fixed configuration tools
+* And other small problem
+
+
+Sven 0.4.
+* Rewrite all programm
+* New design for preferens windows
+* New function (clipman,proc monitor)
+* Support plugins
+
+Sven 0.3.
+* Suport combination keys for keyboard 
+
+Sven 0.2
+* New function (time,memory,cdplayer)
+
+
+Sven 0.1
+* Suport any key for keyboard  
+

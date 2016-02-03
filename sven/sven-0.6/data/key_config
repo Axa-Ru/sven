@@ -1,0 +1,112 @@
+[144:0]
+type=player.so
+enable=1
+description=Pre-track
+command=Player-XMMS Prev
+comment=
+
+[162:0]
+type=player.so
+enable=1
+description=Play/pause
+command=Player-XMMS Play|Pause
+comment=
+
+[164:0]
+type=player.so
+enable=1
+description=Stop
+command=Player-XMMS Stop
+comment=
+
+[153:0]
+type=player.so
+enable=1
+description=
+command=Player-XMMS Next
+comment=
+
+[174:0]
+type=mixer.so
+enable=1
+description=Vol-
+command=Mixer-Volume Down
+comment=
+
+[176:0]
+type=mixer.so
+enable=1
+description=Vol+
+command=Mixer-Volume Up
+comment=
+
+[160:0]
+type=mixer.so
+enable=1
+description=Mute
+command=Mixer-Volume Mute
+comment=
+
+[54:12]
+type=cmd
+enable=1
+description=Search
+command=kfind
+comment=Search
+
+[236:0]
+type=cmd
+enable=1
+description=Email
+command=kmail
+comment=Email
+
+[178:0]
+type=cmd
+enable=1
+description=WWW
+command=firefox
+comment=Firefox
+
+[26:12]
+type=cmd
+enable=1
+description=Excel
+command=oocalc
+comment=Exel
+
+[33:12]
+type=cmd
+enable=1
+description=PowerPoint
+command=ooimpress
+comment=PowerPoint
+
+[234:0]
+type=www.so
+enable=1
+description=WWW Back
+command=Browser-Firefox Back
+comment=Firefox Back
+
+[233:0]
+type=www.so
+enable=1
+description=WWW Forward
+command=Browser-Firefox Forward
+comment=Firefox Forward
+
+[232:0]
+type=www.so
+enable=1
+description=WWW Stop
+command=Browser-Firefox Stop
+comment=Firefox Stop
+
+[231:0]
+type=www.so
+enable=1
+description=WWW Refresh
+command=Browser-Firefox Reload
+comment=Firefox Refresh
+

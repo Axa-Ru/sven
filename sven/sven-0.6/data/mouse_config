@@ -1,0 +1,21 @@
+[4:4]
+type=mixerv.so
+enable=1
+description=
+command=Mixer-Volume Up
+comment=
+
+[5:4]
+type=mixerv.so
+enable=1
+description=
+command=Mixer-Volume Down
+comment=
+
+[2:4]
+type=mixer.so
+enable=1
+description=
+command=Mixer-Volume Mute
+comment=
+

@@ -1,0 +1,21 @@
+# List of source files containing translatable strings.
+
+libsven/pref/about.c
+libsven/pref/confdevice.c
+libsven/pref/configxosd.c
+libsven/pref/configplugin.c
+libsven/pref/prefswin.c
+libsven/configfile.c
+libsven/gtkosd.c
+libsven/key.c
+libsven/mouse.c
+libsven/pixmap.c
+libsven/plugin.c
+libsven/trayicon.c
+libsven/utils.c
+plugins/autoconvert/configure.c
+plugins/autoconvert/flag.c
+plugins/autoconvert/sxkb.c
+plugins/cdrom/cdpl.c
+plugins/mixer/mixer.c
+sven/sven.c

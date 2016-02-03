@@ -1,0 +1,40 @@
+# Makefile for data files
+# Copyright (C) 2005 Eugene Morenko(More) <more@irpin.com>
+
+PACKAGE = @PACKAGE@
+VERSION = @VERSION@
+
+SHELL = /bin/sh
+
+prefix=@prefix@
+pkgdatadir = @pkgdatadir@
+datadir = @datadir@
+
+INSTALLDATA=@INSTALLDATA@
+
+INSTALL = @INSTALL@
+INSTALL_DIR = $(INSTALL) -d -m 755 
+INSTALL_DATA = ${INSTALL} -m 644
+
+DEFAULTFILES = key_config mouse_config 
+
+all: $(DEFAULTFILES)
+
+install: all $(INSTALLDATA)
+	$(INSTALL_DIR) $(DESTDIR)$(pkgdatadir)
+	for file in $(DEFAULTFILES) ; do \
+		$(INSTALL_DATA) $$file $(DESTDIR)$(pkgdatadir) ;\
+	done
+	
+
+uninstall:
+	@for file in $(DEFAULTFILES) ; do \
+		rm -f $(pkgdatadir)$$file ;\
+	done
+	
+
+clean:
+
+
+distclean: clean
+	rm -f Makefile *.rej *.orig *~

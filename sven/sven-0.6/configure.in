@@ -1,0 +1,95 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+
+PACKAGE=sven
+AC_SUBST(PACKAGE)
+
+AM_INIT_AUTOMAKE(sven,0.6)
+AM_CONFIG_HEADER(config.h)
+AM_MAINTAINER_MODE
+
+dnl libsven
+LIBSVEN_MAJOR_VERSION=2
+LIBSVEN_MINOR_VERSION=0
+LIBSVEN_MICRO_VERSION=0
+LIBSVEN_VERSION=$LIBSVEN_MAJOR_VERSION.$LIBSVEN_MINOR_VERSION.$LIBSVEN_MICRO_VERSION
+AC_SUBST(LIBSVEN_MAJOR_VERSION)
+AC_SUBST(LIBSVEN_MINOR_VERSION)
+AC_SUBST(LIBSVEN_MICRO_VERSION)
+
+AM_MAINTAINER_MODE
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AM_PROG_LIBTOOL
+AC_PATH_X
+AC_PATH_XTRA
+
+
+if test "${prefix}" == "NONE"; then
+	prefix=${ac_default_prefix}
+	AC_SUBST(prefix)
+fi
+
+pkgdatadir=${datadir}/${PACKAGE}/
+AC_SUBST(pkgdatadir)
+
+plugindir=$libdir/sven/plugins
+AC_SUBST(plugindir)
+
+localedir='${prefix}/share/locale'
+AC_SUBST(localedir)
+
+dnl Checks for X libraries
+AC_CHECK_LIB(Xtst, XTestFakeKeyEvent,X_LIBS="$X_LIBS -lXtst", 
+	AC_MSG_ERROR([The XTest extension was not found. Please install libxtst and its development files.]),
+	$X_LIBS)
+
+dnl Check for GTK/GLib/Pango
+pkg_modules="gtk+-2.0 >= 2.0.0"
+PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
+AC_SUBST(pkg_modules)
+AC_SUBST(PACKAGE_CFLAGS)
+AC_SUBST(PACKAGE_LIBS)
+
+    
+GETTEXT_PACKAGE=sven
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
+
+dnl Add the languages which your application supports here.
+ALL_LINGUAS="ru"
+AM_GLIB_GNU_GETTEXT
+AC_SUBST(INSTALLDATA)
+
+dnl Produce Output files
+AC_CONFIG_FILES([
+Makefile
+sven.pc
+libsven/Makefile
+sven/Makefile
+po/Makefile.in
+data/Makefile
+script/Makefile
+script/sven-config
+plugins/Makefile
+])
+AC_CONFIG_COMMANDS([default],[[chmod +x script/sven-config]],[[]])
+AC_OUTPUT
+
+echo "-------------------------------------------"
+echo "-                Configure Ok             -"
+echo "-         run make; make install           -"
+echo "-              And sven :-)               -"
+echo "-------------------------------------------"
+echo " **************************************************"
+echo " *    Copyright (C) 2004-2006 Eugene Morenko(More)     *"
+echo " *              mailto: more@irpin.com            *"
+echo " *         web: http://sven.linux.kiev.ua/        *"
+echo " *                  icq:325697438                 *"
+echo " **************************************************"
