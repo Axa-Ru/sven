@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=Application;Utility;GTK;GNOME;
+Comment=Multimedia keyboard deamon
+Encoding=UTF-8
+Exec=sven
+Icon=ICONDIR/sven.png
+Name=Sven
+SwallowExec=
+SwallowTitle=
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

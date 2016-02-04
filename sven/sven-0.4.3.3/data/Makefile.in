@@ -1,0 +1,64 @@
+# Makefile for data files
+# Copyright (C) 2005 Eugene Morenko(More) <more@irpin.com>
+
+PACKAGE = @PACKAGE@
+VERSION = @VERSION@
+
+SHELL = /bin/sh
+
+prefix=@prefix@
+pkgdatadir = @pkgdatadir@
+datadir = @datadir@
+
+GNOME1MENU=@GNOME1MENU@
+FDMENU=@FDMENU@
+ICONPATH=@ICONPATH@
+INSTALLDATA=@INSTALLDATA@
+
+INSTALL = @INSTALL@
+INSTALL_DIR = $(INSTALL) -d -m 755 
+INSTALL_DATA = ${INSTALL} -m 644
+
+DEFAULTFILES = key_config mouse_config sven.desktop sven.png en.cor ru.cor utf.conv
+.SUFFIXES: .in
+
+.in:
+	sed -e 's!PKGDATADIR!$(pkgdatadir)!' < $< > $@
+
+all: $(DEFAULTFILES)
+	sed -e 's!ICONDIR!$(ICONPATH)!' < sven.desktop.in > sven.desktop
+	
+install-gnome1-menu:
+	$(INSTALL_DIR) $(DESTDIR)$(GNOME1MENU)
+	$(INSTALL_DATA) sven.desktop $(DESTDIR)$(GNOME1MENU)
+
+install-fdmenu:
+	$(INSTALL_DIR) $(DESTDIR)$(FDMENU)
+	$(INSTALL_DATA) sven.desktop $(DESTDIR)$(FDMENU)
+
+install-icon:
+	$(INSTALL_DIR) $(DESTDIR)$(ICONPATH)
+	$(INSTALL_DATA) sven.png $(DESTDIR)$(ICONPATH)/sven.png
+
+install: all $(INSTALLDATA)
+	$(INSTALL_DIR) $(DESTDIR)$(pkgdatadir)
+	for file in $(DEFAULTFILES) ; do \
+		$(INSTALL_DATA) $$file $(DESTDIR)$(pkgdatadir) ;\
+	done
+	
+
+uninstall:
+	rm -f $(GNOME1MENU)/sven.desktop
+	rm -f $(FDMENU)/sven.desktop
+	rm -f $(ICONPATH)/sven.png
+	@for file in $(DEFAULTFILES) ; do \
+		rm -f $(pkgdatadir)$$file ;\
+	done
+	
+
+clean:
+	rm -f sven.desktop
+
+
+distclean: clean
+	rm -f Makefile *.rej *.orig *~

@@ -1,0 +1,17 @@
+prefix=@prefix@
+exec_prefix=@prefix@
+data_dir=@pkgdatadir@
+
+version=@VERSION@
+include_dir=@includedir@
+sven_include_dir=@includedir@
+lib_dir=@libdir@
+plugin_dir=@plugindir@
+
+
+Name: Sven
+Description: Sven multimedia keyboard deamon
+Version: @VERSION@
+Requires: @pkg_modules@
+Libs: -L${lib_dir} -lsven
+Cflags: -I${sven_include_dir}
